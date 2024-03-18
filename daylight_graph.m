@@ -1,13 +1,13 @@
 close all;  %Closes all previour graphs and clears screen
-% from https://www.timeanddate.com/sun/usa/fremont?month=12&year=2023
+% Data from from https://www.timeanddate.com
 
 %t1, t2 and date create a vector of the dates in the year
 t1=datetime(2024,1,1);
 t2=datetime(2024,12,31);
 date=t1:t2;
 
-%read the data from the spreadsheet which must be in the same folder as
-%this file
+% read the data from the spreadsheet which must be in the 
+% same folder as this file
 Fremont=xlsread('daylight.xlsx','Fremont');
 Lahaina=xlsread('daylight.xlsx','Lahaina');
 Anchorage=xlsread('daylight.xlsx','Anchorage');
